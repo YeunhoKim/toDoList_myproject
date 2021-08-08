@@ -1,3 +1,76 @@
 .hidden {
     display:none;
 }
+
+body {
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#login-form {
+    
+    margin-bottom: 30vh;
+}
+
+#login-form input, #todo-form input {
+    width: 20rem;
+    height: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    border: none;
+    background: transparent;
+    border-bottom: solid 1px white;
+}
+
+#login-form input::placeholder, #todo-form input::placeholder {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+#welcome {
+    font-size: 3.5rem;
+}
+
+#clock {
+    margin: 40px 0;
+    font-size: 4rem;
+}
+
+#todo-list {
+    font-size: 2.5rem;
+    margin: 15px;
+}
+
+#quotes {
+    text-align: center;
+    margin: 10px;
+}
+
+#quotes span:first-child {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#quotes span:last-child {
+    margin: 20px 0px;
+    font-size: 1.5rem;
+}
+
+.greeting h2 {
+    font-size: 3rem;
+}
+
+#weather {
+    margin-top: 20px;
+    margin-bottom: 30vh;
+    font-size: 1.5rem;
+}

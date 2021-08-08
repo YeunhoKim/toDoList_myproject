@@ -4,8 +4,10 @@ const body = document.querySelector("body");
 
 const choseImg = Math.floor(Math.random() * imgList.length);
 
-const img = document.createElement("img");
+//const img = document.createElement("img");
 
-img.src=`./img/${imgList[choseImg]}`
+body.style.backgroundImage = `url('./img/${imgList[choseImg]}')`;
 
-body.append(img);
+//img.src=
+
+//body.append(img);

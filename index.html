@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="kr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styels.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/styels.css" />
     <title>My Todo List</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h2 id="welcome">Hello! Stranger! Please Let me know who you are</h2>
+
     <div id="clock">
-        <h4>00:00:00</h4>
+      <h4>00:00:00</h4>
     </div>
 
     <form id="login-form">
-        <h2>Let me Know who you are!!</h2>
-        <input type="text" required maxlength="6" placeholder="Write Your Name">
-        <button>Log In</button>
+      <input type="text" required maxlength="6" placeholder="Write Your Name" />
     </form>
 
     <div class="hidden greeting">
-        <h2>Hi!</h2>
-    </div>  
+      <h2>Hi!</h2>
+    </div>
 
     <form id="todo-form" class="hidden">
-        <input type="text" required placeholder="Write a to do and press enter">
+      <input type="text" required placeholder="Input Todo" />
     </form>
 
     <ul id="todo-list"></ul>
 
-    <div id="quotes">
-        <span></span>
-        <span></span>
+    <div id="quotes" class="hidden">
+      <span></span>
+      <br />
+      <span></span>
+    </div>
+
+    <div id="weather" class="hidden">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
     <script src="js/greeting.js"></script>
@@ -38,5 +46,6 @@
     <script src="js/quotes.js"></script>
     <script src="js/bgControl.js"></script>
     <script src="js/todo.js"></script>
-</body>
+    <script src="js/weather.js"></script>
+  </body>
 </html>
